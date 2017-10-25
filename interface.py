@@ -1,6 +1,5 @@
 from Tkinter import *
 import Tkinter as tk
-import server
 import client
 
 class Janela_Principal():
@@ -34,9 +33,6 @@ class Janela_Principal():
 	def send(self, message):
 		self.client = client.Client()
 		self.client.main(message)
-
-	def receive(self):
-		server.main()
 
 
 app = Janela_Principal()
