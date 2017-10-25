@@ -1,31 +1,35 @@
 #socket_echo_client.py
 import socket
-import sys
+import sys	
 
 # Create a TCP/IP socket
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+class Client():
 
-# Connect the socket to the port where the server is listening
-server_address = ('localhost', 1235)
-print('connecting to {} port {}'.format(*server_address))
-sock.connect(server_address)
+	def __init__(self):
+		self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		self.server_address = ('localhost', 1235)
 
-try:
+	def main(self, message):
+		# Connect the socket to the port where the server is listening
+		print('connecting to {} port {}'.format(*self.server_address))
+		self.sock.connect(self.server_address)
 
-    # Send data
-    message = b'This is the message.  It will be repeated.'
-    print('sending {!r}'.format(message))
-    sock.sendall(message)
+		try:
 
-    # Look for the response
-    amount_received = 0
-    amount_expected = len(message)
+		    # Send data
+		    
+		    print('sending {!r}'.format(message))
+		    self.sock.sendall(message)
 
-    while amount_received < amount_expected:
-        data = sock.recv(16)
-        amount_received += len(data)
-        print('received {!r}'.format(data))
+		    # Look for the response
+		    # amount_received = 0
+		    # amount_expected = len(message)
 
-finally:
-    print('closing socket')
-    sock.close()
+		    # while amount_received < amount_expected:
+		    #     data = sock.recv(16)
+		    #     amount_received += len(data)
+		    #     print('received {!r}'.format(data))
+
+		finally:
+		    print('closing socket')
+		    self.sock.close()

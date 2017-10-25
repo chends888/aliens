@@ -7,7 +7,6 @@ import sys
 
 def main():
     PORTA = 1234
-
     print("Inicializando socket TCP/IP")
     # Create a TCP/IP socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
