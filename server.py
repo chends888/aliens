@@ -21,30 +21,25 @@ class Server():
 	    self.sock.bind(self.server_address)
 
 	    # Listen for incoming connections
-	    sock.listen(1)
+	    self.sock.listen(1)
 
 	    while True:
 	        # Wait for a connection
-	        print("Waiting for a connection")
-	        connection, client_address = sock.accept()
-
-	        try:
-	            print(" connection from {}".format(client_address))
-	        except:
-	        	pass
-	        break
+			print("Waiting for a connection")
+			self.connection, self.client_address = self.sock.accept()
+			print(" connection from {}".format(self.client_address))
+			break
 	
-	def receberTexto():
+	def receberTexto(self):
         # Receive the data in small chunks and retransmit it
-        while True:
-            data = connection.recv(16)
-            print("{}".format(data))
-            if len(data) > 0:
-            	return data
-            if(len(data) <= 0):
-                break
+		while True:
+			data = self.connection.recv(16)
+			print("{}".format(data))
+			if len(data) > 0:
+				return data
+			if(len(data) <= 0):
+			    break
 
-    def finishConnection():
-    	finally:
-        	# Clean up the connection
-        	connection.close()
+	def finishConnection(self):
+	# Clean up the connection
+		self.connection.close()

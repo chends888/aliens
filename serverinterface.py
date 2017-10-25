@@ -13,7 +13,6 @@ class Janela_Principal():
 		self.input_field = Entry(self.window, text=self.input_user)
 		self.input_field.pack(side=BOTTOM, fill=X)
 		self.frame = Frame(self.window)  # , width=300, height=300)
-		self.input_field.bind("<Return>", self.enter_pressed)
 		self.frame.pack()
 
 	def iniciar(self):
@@ -24,17 +23,17 @@ class Janela_Principal():
 		self.server.connectSocket()
 		self.start_thread()
 
-    def thread(self):
-        while True:
-            print("thread")
-            texto = self.server.receberTexto()
-            self.messages.insert(INSERT, '%s' %  texto)
+	def thread(self):
+		while True:
+			print("thread")
+			texto = self.server.receberTexto()
+			self.messages.insert(INSERT, '%s' %  texto)
 
-    def start_thread(self):
-        print("iniciado")
-        self.thread = threading.Thread(target=self.thread, args=())
-        self.thread.start()
-        
+	def start_thread(self):
+		print("iniciado")
+		self.thread = threading.Thread(target=self.thread, args=())
+		self.thread.start()
+							
 
 
 
