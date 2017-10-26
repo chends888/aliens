@@ -11,7 +11,7 @@
 
 ## Frequência de transmissão e banda
 
- Para definir a frequência de transmissão (portadora) realizamos testes com o GNURadio para encontrar um valor adequado ao microfone e speaker utilizados, analisando a recepção e o diagrama de constelação. Para isso, alteramos o valor da frequência de modo que os pontos apresentados no diagrama se concentrassem em dois polos, indicando assim, baixa quantidade de ruído e/ou perdas no sinal. A imagem abaixo exemplifica o resultado do diagrama de constelação com a frequência XX utilizada:
+ Para definir a frequência de transmissão (portadora) realizamos testes com o GNURadio para encontrar um valor adequado ao microfone e speaker utilizados, analisando a recepção e o diagrama de constelação. Para isso, alteramos o valor da frequência de modo que os pontos apresentados no diagrama se concentrassem em dois polos, indicando assim, baixa quantidade de ruído e/ou perdas no sinal. A imagem abaixo exemplifica o resultado do diagrama de constelação com a frequência de 2200Hz utilizada:
 
 ----------------------------------------------------------------------------------------
 
