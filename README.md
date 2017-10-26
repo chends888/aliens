@@ -16,19 +16,19 @@
 ## Gráficos:
 
 ## Gráfico no tempo do sinal não codificado da transferência
-![1](img/1.1 Tx.png)
+![1](https://github.com/chends888/aliens/blob/master/img/1.1%20Tx.png)
 ## Gráfico na frequênica do sinal não codificado da transferência
-![2](img/1.2 Tx.png)
+![2](https://github.com/chends888/aliens/blob/master/img/1.2%20Tx.png)
 ## Gráfico no tempo do sinal codificado da transferência
-![3](img/2.1 Tx.png)
+![3](https://github.com/chends888/aliens/blob/master/img/2.1%20Tx.png)
 ## Gráfico na frequênica do sinal codificado da transferência
-![4](img/2.2 Tx.png)
+![4](https://github.com/chends888/aliens/blob/master/img/2.2%20Tx.png)
 ## Gráfico no tempo do sinal modulado da transferência
-![5](img/3.1 Tx.png)
+![5](https://github.com/chends888/aliens/blob/master/img/3.1%20Tx.png)
 ## Gráfico na frequênica do sinal modulado da transferência
-![6](img/3.2 Tx.png)
+![6](https://github.com/chends888/aliens/blob/master/img/3.2%20Tx.png)
 ## Diagrama de constelação da transferência
-![7](img/Constellation tx.png)
+![7](https://github.com/chends888/aliens/blob/master/img/Constellation%20tx.png)
 
 
 ## Gráfico no tempo do sinal não codificado da recepção
