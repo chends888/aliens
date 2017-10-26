@@ -15,28 +15,35 @@
 
 ## Gráficos:
 
-## Gráfico no tempo do sinal não codificado da transferência
-![1](https://github.com/chends888/aliens/blob/master/img/1.1%20Tx.png)
-## Gráfico na frequênica do sinal não codificado da transferência
-![2](https://github.com/chends888/aliens/blob/master/img/1.2%20Tx.png)
-## Gráfico no tempo do sinal codificado da transferência
-![3](https://github.com/chends888/aliens/blob/master/img/2.1%20Tx.png)
-## Gráfico na frequênica do sinal codificado da transferência
-![4](https://github.com/chends888/aliens/blob/master/img/2.2%20Tx.png)
-## Gráfico no tempo do sinal modulado da transferência
-![5](https://github.com/chends888/aliens/blob/master/img/3.1%20Tx.png)
-## Gráfico na frequênica do sinal modulado da transferência
-![6](https://github.com/chends888/aliens/blob/master/img/3.2%20Tx.png)
+## Gráfico no tempo do sinal não codificado
+![Não codificado t](https://github.com/chends888/aliens/blob/master/img/1.1%20Tx.png)
+## Gráfico em frequênica do sinal não codificado
+![Não codificado f](https://github.com/chends888/aliens/blob/master/img/1.2%20Tx.png)
+As duas imagens acima apresentam a plotagem do sinal não codificado, sem qualquer tratamento.
+
+
+## Gráfico no tempo do sinal codificado
+![Codificado t](https://github.com/chends888/aliens/blob/master/img/2.1%20Tx.png)
+## Gráfico em frequênica do sinal codificado
+![Codificado f](https://github.com/chends888/aliens/blob/master/img/2.2%20Tx.png)
+As duas imagens acima apresentam o sinal codificado, onde há a repetição das portadoras no gráfico dos sinal em frequência.
+
+## Gráfico no tempo do sinal modulado
+![Modulado t](https://github.com/chends888/aliens/blob/master/img/3.1%20Tx.png)
+## Gráfico em frequênica do sinal modulado
+![Modulado f](https://github.com/chends888/aliens/blob/master/img/3.2%20Tx.png)
+As duas imagens acima apresentam o sinal modulado, prestes a ser enviado, onde há a "shiftagem" da portadora no sinal em frequência e suas repetições tanto no domínio positivo quanto no negativo. 
+
 ## Diagrama de constelação da transferência
-![7](https://github.com/chends888/aliens/blob/master/img/Constellation%20tx.png)
+![Constellation tx](https://github.com/chends888/aliens/blob/master/img/Constellation%20tx.png)
+A imagem acima representa a modulação digital do sinal que é pretendido enviar, e sua concentração, mesmo que dispersa, em um foco no centro da imagem aponta que realmente é um sinal tratado (modulado).
 
 
-## Gráfico no tempo do sinal não codificado da recepção
-## Gráfico na frequênica do sinal não codificado da recepção
-## Gráfico no tempo do sinal codificado da recepção
-## Gráfico na frequênica do sinal codificado da recepção
-## Gráfico no tempo do sinal modulado da recepção
-## Gráfico na frequênica do sinal modulado da recepção
+
+## Gráfico no tempo do áudio recebido
+## Gráfico em frequênica do áudio recebido
+## Gráfico no tempo do áudio demodulado
+## Gráfico em frequênica do  áudio demodulado
 ## Diagrama de constelação da recepção
 
 
