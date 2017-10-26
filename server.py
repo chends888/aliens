@@ -16,6 +16,7 @@ class Server():
 	    print("Initializing socket TCP/IP")
 	    # Bind the socket to the port
 	    self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	    self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 	    self.server_address = ('localhost', self.PORTA)
 	    print("PORTA {}".format(self.PORTA))
 	    self.sock.bind(self.server_address)

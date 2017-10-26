@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Wed Oct 25 20:19:22 2017
+# Generated: Wed Oct 25 22:03:23 2017
 ##################################################
 
 if __name__ == '__main__':
@@ -67,13 +67,15 @@ class top_block(gr.top_block, Qt.QWidget):
         self.samp_rate = samp_rate = 44.1E3
         self.rrc_taps = rrc_taps = firdes.root_raised_cosine(nfilts, nfilts, 1.0/float(sps), 0.35, 45*nfilts)
         self.fc_slider = fc_slider = 2200
+        
         self.BPSK = BPSK = digital.constellation_calcdist(([-1, 1]), ([0, 1]), 4, 1).base()
+        
 
         ##################################################
         # Blocks
         ##################################################
         self._fc_slider_range = Range(0, 18200, 200, 2200, 150)
-        self._fc_slider_win = RangeWidget(self._fc_slider_range, self.set_fc_slider, "fc", "counter_slider", float)
+        self._fc_slider_win = RangeWidget(self._fc_slider_range, self.set_fc_slider, 'fc', "counter_slider", float)
         self.top_layout.addWidget(self._fc_slider_win)
         self.qtgui_time_sink_x_0_0 = qtgui.time_sink_f(
         	1024, #size
@@ -84,19 +86,20 @@ class top_block(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0_0.set_update_time(0.10)
         self.qtgui_time_sink_x_0_0.set_y_axis(-1, 1)
         
-        self.qtgui_time_sink_x_0_0.set_y_label("Amplitude", "")
+        self.qtgui_time_sink_x_0_0.set_y_label('Amplitude', "")
         
         self.qtgui_time_sink_x_0_0.enable_tags(-1, True)
         self.qtgui_time_sink_x_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
         self.qtgui_time_sink_x_0_0.enable_autoscale(False)
         self.qtgui_time_sink_x_0_0.enable_grid(False)
+        self.qtgui_time_sink_x_0_0.enable_axis_labels(True)
         self.qtgui_time_sink_x_0_0.enable_control_panel(False)
         
         if not True:
           self.qtgui_time_sink_x_0_0.disable_legend()
         
-        labels = ["", "", "", "", "",
-                  "", "", "", "", ""]
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
                   1, 1, 1, 1, 1]
         colors = ["blue", "red", "green", "black", "cyan",
@@ -132,12 +135,13 @@ class top_block(gr.top_block, Qt.QWidget):
         self.qtgui_const_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, "")
         self.qtgui_const_sink_x_0.enable_autoscale(False)
         self.qtgui_const_sink_x_0.enable_grid(True)
+        self.qtgui_const_sink_x_0.enable_axis_labels(True)
         
         if not True:
           self.qtgui_const_sink_x_0.disable_legend()
         
-        labels = ["", "", "", "", "",
-                  "", "", "", "", ""]
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
                   1, 1, 1, 1, 1]
         colors = ["blue", "red", "red", "red", "red",
@@ -173,17 +177,17 @@ class top_block(gr.top_block, Qt.QWidget):
         self.blocks_complex_to_real_0 = blocks.complex_to_real(1)
         self.blks2_tcp_sink_0 = grc_blks2.tcp_sink(
         	itemsize=gr.sizeof_char*1,
-        	addr="127.0.0.1",
+        	addr='127.0.0.1',
         	port=1234,
         	server=False,
         )
         self.blks2_packet_decoder_0 = grc_blks2.packet_demod_b(grc_blks2.packet_decoder(
-        		access_code="",
+        		access_code='',
         		threshold=-1,
         		callback=lambda ok, payload: self.blks2_packet_decoder_0.recv_pkt(ok, payload),
         	),
         )
-        self.audio_source_0 = audio.source(44100, "", True)
+        self.audio_source_0 = audio.source(44100, '', True)
         self.analog_sig_source_x_0_0 = analog.sig_source_c(samp_rate, analog.GR_COS_WAVE, fc_slider, 1, 0)
         self.analog_feedforward_agc_cc_0 = analog.feedforward_agc_cc(1024, 1)
 
@@ -211,7 +215,6 @@ class top_block(gr.top_block, Qt.QWidget):
         self.settings.setValue("geometry", self.saveGeometry())
         event.accept()
 
-
     def get_sps(self):
         return self.sps
 
@@ -231,9 +234,9 @@ class top_block(gr.top_block, Qt.QWidget):
 
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
-        self.analog_sig_source_x_0_0.set_sampling_freq(self.samp_rate)
-        self.low_pass_filter_0.set_taps(firdes.low_pass(1, self.samp_rate, 1.1E3, .6E3, firdes.WIN_HAMMING, 6.76))
         self.qtgui_time_sink_x_0_0.set_samp_rate(self.samp_rate)
+        self.low_pass_filter_0.set_taps(firdes.low_pass(1, self.samp_rate, 1.1E3, .6E3, firdes.WIN_HAMMING, 6.76))
+        self.analog_sig_source_x_0_0.set_sampling_freq(self.samp_rate)
 
     def get_rrc_taps(self):
         return self.rrc_taps

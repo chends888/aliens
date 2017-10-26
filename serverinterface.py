@@ -1,6 +1,7 @@
 from Tkinter import *
 import Tkinter as tk
 import server
+import threading
 
 class Janela_Principal():
 
@@ -14,6 +15,12 @@ class Janela_Principal():
 		self.input_field.pack(side=BOTTOM, fill=X)
 		self.frame = Frame(self.window)  # , width=300, height=300)
 		self.frame.pack()
+
+		self.receive()
+
+
+
+
 
 	def iniciar(self):
 		self.window.mainloop()
@@ -33,7 +40,7 @@ class Janela_Principal():
 		print("iniciado")
 		self.thread = threading.Thread(target=self.thread, args=())
 		self.thread.start()
-							
+
 
 
 
