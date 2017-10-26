@@ -16,19 +16,19 @@
 ## Gráficos:
 
 ## Gráfico no tempo do sinal não codificado da transferência
-![1](img/1.1.png)
+![1](img/1.1 Tx.png)
 ## Gráfico na frequênica do sinal não codificado da transferência
-![2](img/1.2.png)
+![2](img/1.2 Tx.png)
 ## Gráfico no tempo do sinal codificado da transferência
-![3](img/2.1.png)
+![3](img/2.1 Tx.png)
 ## Gráfico na frequênica do sinal codificado da transferência
-![4](img/2.2.png)
+![4](img/2.2 Tx.png)
 ## Gráfico no tempo do sinal modulado da transferência
-![5](img/3.1.png)
+![5](img/3.1 Tx.png)
 ## Gráfico na frequênica do sinal modulado da transferência
-![6](img/3.2.png)
+![6](img/3.2 Tx.png)
 ## Diagrama de constelação da transferência
-![7](img/Constellation.png)
+![7](img/Constellation tx.png)
 
 
 ## Gráfico no tempo do sinal não codificado da recepção
