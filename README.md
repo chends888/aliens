@@ -11,13 +11,35 @@
 
 ## Frequência de transmissão e banda
 
- Para definir a frequência de transmissão (portadora) realizamos testes com o GNURadio para encontrar um valor adequado ao microfone e speaker utilizados, analisando a recepção e o diagrama de constelação. Para isso, alteramos o valor da frequência de modo que os pontos apresentados no diagrama se concentrassem em dois polos, indicando assim, baixa quantidade de ruído e/ou perdas no sinal. A imagem abaixo exemplifica o resultado do diagrama de constelação com a frequência de 2200Hz utilizada:
-
-----------------------------------------------------------------------------------------
-
-O sinal ocupa uma banda de XX.
+ Para definir a frequência de transmissão (portadora) realizamos testes com o GNURadio para encontrar um valor adequado ao microfone e speaker utilizados, analisando a recepção e o diagrama de constelação. Para isso, alteramos o valor da frequência de modo que os pontos apresentados no diagrama se concentrassem em dois polos, indicando assim, baixa quantidade de ruído e/ou perdas no sinal. A frequência utilizada é de 2200Hz e a banda ocupada de 
 
 ## Gráficos:
+
+## Gráfico no tempo do sinal não codificado da transferência
+![1](img/1.1.png)
+## Gráfico na frequênica do sinal não codificado da transferência
+![2](img/1.2.png)
+## Gráfico no tempo do sinal codificado da transferência
+![3](img/2.1.png)
+## Gráfico na frequênica do sinal codificado da transferência
+![4](img/2.2.png)
+## Gráfico no tempo do sinal modulado da transferência
+![5](img/3.1.png)
+## Gráfico na frequênica do sinal modulado da transferência
+![6](img/3.2.png)
+## Diagrama de constelação da transferência
+![7](img/Constellation.png)
+
+
+## Gráfico no tempo do sinal não codificado da recepção
+## Gráfico na frequênica do sinal não codificado da recepção
+## Gráfico no tempo do sinal codificado da recepção
+## Gráfico na frequênica do sinal codificado da recepção
+## Gráfico no tempo do sinal modulado da recepção
+## Gráfico na frequênica do sinal modulado da recepção
+## Diagrama de constelação da recepção
+
+
 
 ## Validação:
  Para validar o funcionamento desse projeto, ele terá que ser capaz de transmitir uma mensagem de um computador, por meio de uma interface de chat e ela deve ser recebida sem erros em outro computador, na mesma inteface por meio de ondas eletromagnéticas.
