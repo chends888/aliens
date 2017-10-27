@@ -40,12 +40,21 @@ A imagem acima representa a modulação digital do sinal que é pretendido envia
 
 
 
-## Gráfico no tempo do áudio recebido
-## Gráfico em frequênica do áudio recebido
-## Gráfico no tempo do áudio demodulado
-## Gráfico em frequênica do  áudio demodulado
-## Diagrama de constelação da recepção
+## Gráfico no tempo do áudio recebido modulado e demodulado
+Observamos aqui o gráfico dos sinais recebidos em relação à sua intensidade tanto cru (modulado) quanto demodulado, este gráfico em particular não nos diz muito sobre a onda recebida.
+![rxsinais](https://github.com/chends888/aliens/blob/master/img/rxsinais.png)
 
+## Gráfico em frequência do áudio recebido
+
+![rxfreq](https://github.com/chends888/aliens/blob/master/img/rxfreq.png)
+
+## Gráfico em frequência do  áudio demodulado
+
+![rxfreqdemo](https://github.com/chends888/aliens/blob/master/img/rxfreqdemo.png)
+
+## Diagrama de constelação da recepção
+Aqui podemos analisar de forma visual a precisão da nossa transmissão. No caso da transmissão BPSK, temos dois símbolos que são usados na tradução/demodulação. No gráfico, teremos duas nuvens de pontos, quanto menos dispersos estes pontos estiverem entre si, maior será a confiabilidade de nossa transmissão.
+![rxconstellation](https://github.com/chends888/aliens/blob/master/img/rxconstallation.png)
 
 
 ## Validação:
