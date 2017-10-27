@@ -11,7 +11,7 @@
 
 ## Frequência de transmissão e banda
 
- Para definir a frequência de transmissão (portadora) realizamos testes com o GNURadio para encontrar um valor adequado ao microfone e speaker utilizados, analisando a recepção e o diagrama de constelação. Para isso, alteramos o valor da frequência de modo que os pontos apresentados no diagrama se concentrassem em dois polos, indicando assim, baixa quantidade de ruído e/ou perdas no sinal. A frequência utilizada é de 2200Hz e a banda ocupada de 
+ Para definir a frequência de transmissão (portadora) realizamos testes com o GNURadio para encontrar um valor adequado ao microfone e speaker utilizados, analisando a recepção e o diagrama de constelação. Para isso, alteramos o valor da frequência de modo que os pontos apresentados no diagrama se concentrassem em dois polos, indicando assim, baixa quantidade de ruído e/ou perdas no sinal. A frequência utilizada é de 2200Hz e analisando-se o gráfico de frequência, a banda ocupada pelo sinal é de aproximadamente 8kHz.
 
 ## Gráficos:
 
@@ -45,11 +45,11 @@ Observamos aqui o gráfico dos sinais recebidos em relação à sua intensidade 
 ![rxsinais](https://github.com/chends888/aliens/blob/master/img/rxsinais.png)
 
 ## Gráfico em frequência do áudio recebido
-
+Esté é o gráfico do sinal recebido sem nenhum tipo de transformação, representando apenas as frequências da onda recebida.
 ![rxfreq](https://github.com/chends888/aliens/blob/master/img/rxfreq.png)
 
 ## Gráfico em frequência do  áudio demodulado
-
+Este gráfico representa o sinal depois de ser demodulado. Ou seja, este é o sinal que é traduzido para os sinais que formam a mensagem transmitida.
 ![rxfreqdemo](https://github.com/chends888/aliens/blob/master/img/rxfreqdemo.png)
 
 ## Diagrama de constelação da recepção
